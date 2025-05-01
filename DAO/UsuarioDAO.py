@@ -57,13 +57,25 @@ class UsuarioDAO:
                 log.debug(f'Usuario a actualizar: {usuario}')
                 
                 return cursor.rowcount
+            
+    #Método para eliminar un usuario
+    @classmethod
+    def eliminar_usuario(cls, id_usuario):
+        with Conexion.obtenerConexion() as conexion:
+            with conexion.cursor() as cursor:
+                valores = (id_usuario,)
+                cursor.execute(cls._DELETE, valores)
+                log.debug(f'Usuario a eliminar: {id_usuario}')
+                
+                return cursor.rowcount
+
 
 if __name__ == '__main__':
     
     #Simular un select
-    usuarios = UsuarioDAO.seleccionar()
-    for usuario in usuarios:
-        log.debug(usuario)
+    # usuarios = UsuarioDAO.seleccionar()
+    # for usuario in usuarios:
+    #     log.debug(usuario)
     
     #Simular un insert
     # usuario1 = Usuario(nombre="Juan", edad=25, email="juanitoooo@gmail.com")
@@ -72,8 +84,16 @@ if __name__ == '__main__':
     #     log.debug(f'Usuario insertado: {usuario1}')
     
     #Simular un update
-    usuario2 = Usuario(nombre="Maria",edad=30, email="mariaaaa@gmail.com")
-    id_actualizar = 25 #ID del usuario a actualizar
-    sentencia = UsuarioDAO.update_usuario(usuario2, id_actualizar)
+    # usuario2 = Usuario(nombre="Maria",edad=30, email="mariaaaa@gmail.com")
+    # id_actualizar = 25 #ID del usuario a actualizar
+    # sentencia = UsuarioDAO.update_usuario(usuario2, id_actualizar)
+    # if sentencia == 1:
+    #     log.debug(f'Usuario actualizado: {usuario2} id = {id_actualizar}')
+    
+    #Simular un delete
+    id_eliminar = 25 #ID del usuario a eliminar
+    sentencia = UsuarioDAO.eliminar_usuario(id_eliminar)
     if sentencia == 1:
-        log.debug(f'Usuario actualizado: {usuario2} id = {id_actualizar}')
+        log.debug(f'Usuario eliminado: {id_eliminar}')
+    else:
+        log.debug(f'No se elimino el usuario: {id_eliminar}')

@@ -87,3 +87,6 @@
 2025-05-01 13:22:32 - DEBUG - Usuario [id_usuario=25, nombre=Maria, edad=30, email=mariaaaa@gmail.com]
 2025-05-01 13:22:32 - DEBUG - Usuario a actualizar: Usuario [id_usuario=None, nombre=Maria, edad=30, email=mariaaaa@gmail.com]
 2025-05-01 13:22:32 - DEBUG - Usuario actualizado: Usuario [id_usuario=None, nombre=Maria, edad=30, email=mariaaaa@gmail.com] id = 25
+2025-05-01 13:25:07 - DEBUG - Conectado a la base de datos test_db en 127.0.0.1:5432
+2025-05-01 13:25:07 - DEBUG - Usuario a eliminar: 25
+2025-05-01 13:25:07 - DEBUG - Usuario eliminado: 25
