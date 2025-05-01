@@ -57,3 +57,33 @@
 2025-05-01 13:15:39 - DEBUG - Usuario [id_usuario=23, nombre=Pedro, edad=35, email=ppedro@gmail.com]
 2025-05-01 13:15:39 - DEBUG - Usuario [id_usuario=24, nombre=Juan, edad=25, email=juanitoooo@gmail.com]
 2025-05-01 13:15:39 - DEBUG - Usuario a insertar: Usuario [id_usuario=None, nombre=Juan, edad=25, email=juanitoooo@gmail.com]
+2025-05-01 13:21:38 - DEBUG - Conectado a la base de datos test_db en 127.0.0.1:5432
+2025-05-01 13:21:38 - DEBUG - Cursor creado: <cursor object at 0x000001A415C82180; closed: 0>
+2025-05-01 13:21:38 - DEBUG - Usuario [id_usuario=1, nombre=Tomas, edad=21, email=tprimo@gmail.com]
+2025-05-01 13:21:38 - DEBUG - Usuario [id_usuario=2, nombre=Lucia, edad=18, email=lcarrillo@gmail.com]
+2025-05-01 13:21:38 - DEBUG - Usuario [id_usuario=3, nombre=Patata, edad=30, email=llucas@gmail.com]
+2025-05-01 13:21:38 - DEBUG - Usuario [id_usuario=10, nombre=Mario, edad=20, email=mmario@gmail.com]
+2025-05-01 13:21:38 - DEBUG - Usuario [id_usuario=11, nombre=Juan, edad=25, email=jjuan@gmail.com]
+2025-05-01 13:21:38 - DEBUG - Usuario [id_usuario=12, nombre=Pedro, edad=40, email=ppedro@gmail.com]
+2025-05-01 13:21:38 - DEBUG - Usuario [id_usuario=21, nombre=Mario, edad=20, email=mmario@gmail.com]
+2025-05-01 13:21:38 - DEBUG - Usuario [id_usuario=22, nombre=Juan, edad=25, email=jjuan@gmail.com]
+2025-05-01 13:21:38 - DEBUG - Usuario [id_usuario=23, nombre=Pedro, edad=35, email=ppedro@gmail.com]
+2025-05-01 13:21:38 - DEBUG - Usuario [id_usuario=24, nombre=Juan, edad=25, email=juanitoooo@gmail.com]
+2025-05-01 13:21:38 - DEBUG - Usuario [id_usuario=25, nombre=Juan, edad=25, email=juanitoooo@gmail.com]
+2025-05-01 13:21:38 - DEBUG - Usuario a actualizar: Usuario [id_usuario=None, nombre=Maria, edad=30, email=mariaaaa@gmail.com]
+2025-05-01 13:21:38 - DEBUG - Usuario actualizado: Usuario [id_usuario=None, nombre=Maria, edad=30, email=mariaaaa@gmail.com]
+2025-05-01 13:22:32 - DEBUG - Conectado a la base de datos test_db en 127.0.0.1:5432
+2025-05-01 13:22:32 - DEBUG - Cursor creado: <cursor object at 0x00000250899420A0; closed: 0>
+2025-05-01 13:22:32 - DEBUG - Usuario [id_usuario=1, nombre=Tomas, edad=21, email=tprimo@gmail.com]
+2025-05-01 13:22:32 - DEBUG - Usuario [id_usuario=2, nombre=Lucia, edad=18, email=lcarrillo@gmail.com]
+2025-05-01 13:22:32 - DEBUG - Usuario [id_usuario=3, nombre=Patata, edad=30, email=llucas@gmail.com]
+2025-05-01 13:22:32 - DEBUG - Usuario [id_usuario=10, nombre=Mario, edad=20, email=mmario@gmail.com]
+2025-05-01 13:22:32 - DEBUG - Usuario [id_usuario=11, nombre=Juan, edad=25, email=jjuan@gmail.com]
+2025-05-01 13:22:32 - DEBUG - Usuario [id_usuario=12, nombre=Pedro, edad=40, email=ppedro@gmail.com]
+2025-05-01 13:22:32 - DEBUG - Usuario [id_usuario=21, nombre=Mario, edad=20, email=mmario@gmail.com]
+2025-05-01 13:22:32 - DEBUG - Usuario [id_usuario=22, nombre=Juan, edad=25, email=jjuan@gmail.com]
+2025-05-01 13:22:32 - DEBUG - Usuario [id_usuario=23, nombre=Pedro, edad=35, email=ppedro@gmail.com]
+2025-05-01 13:22:32 - DEBUG - Usuario [id_usuario=24, nombre=Juan, edad=25, email=juanitoooo@gmail.com]
+2025-05-01 13:22:32 - DEBUG - Usuario [id_usuario=25, nombre=Maria, edad=30, email=mariaaaa@gmail.com]
+2025-05-01 13:22:32 - DEBUG - Usuario a actualizar: Usuario [id_usuario=None, nombre=Maria, edad=30, email=mariaaaa@gmail.com]
+2025-05-01 13:22:32 - DEBUG - Usuario actualizado: Usuario [id_usuario=None, nombre=Maria, edad=30, email=mariaaaa@gmail.com] id = 25

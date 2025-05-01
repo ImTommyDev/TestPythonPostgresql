@@ -46,6 +46,17 @@ class UsuarioDAO:
                 log.debug(f'Usuario a insertar: {usuario}')
 
                 return cursor.rowcount #Retorno el numero de filas afectadas (1 si se inserto correctamente, 0 si no se inserto)
+            
+    #Método para actualizar un usuario
+    @classmethod
+    def update_usuario(cls, usuario, id_usuario):
+        with Conexion.obtenerConexion() as conexion:
+            with conexion.cursor() as cursor:
+                valores = (usuario.nombre, usuario.edad, usuario.email, id_usuario)
+                cursor.execute(cls._UPDATE, valores)
+                log.debug(f'Usuario a actualizar: {usuario}')
+                
+                return cursor.rowcount
 
 if __name__ == '__main__':
     
@@ -54,7 +65,15 @@ if __name__ == '__main__':
     for usuario in usuarios:
         log.debug(usuario)
     
-    
     #Simular un insert
-    usuario1 = Usuario(nombre="Juan", edad=25, email="juanitoooo@gmail.com")
-    UsuarioDAO.insertar(usuario1)
+    # usuario1 = Usuario(nombre="Juan", edad=25, email="juanitoooo@gmail.com")
+    # sentencia = UsuarioDAO.insertar(usuario1)
+    # if sentencia == 1:
+    #     log.debug(f'Usuario insertado: {usuario1}')
+    
+    #Simular un update
+    usuario2 = Usuario(nombre="Maria",edad=30, email="mariaaaa@gmail.com")
+    id_actualizar = 25 #ID del usuario a actualizar
+    sentencia = UsuarioDAO.update_usuario(usuario2, id_actualizar)
+    if sentencia == 1:
+        log.debug(f'Usuario actualizado: {usuario2} id = {id_actualizar}')
