@@ -34,11 +34,27 @@ class UsuarioDAO:
                 usuarios.append(usuario)
                 
             return usuarios
+        
+    #Método para insertar un usuario
+    @classmethod
+    def insertar(cls, usuario):
+        #Creo una transaccion
+        with Conexion.obtenerConexion() as conexion:
+            with conexion.cursor() as cursor:
+                valores = (usuario.nombre, usuario.edad, usuario.email)
+                cursor.execute(cls._INSERT, valores)
+                log.debug(f'Usuario a insertar: {usuario}')
 
+                return cursor.rowcount #Retorno el numero de filas afectadas (1 si se inserto correctamente, 0 si no se inserto)
 
 if __name__ == '__main__':
     
+    #Simular un select
     usuarios = UsuarioDAO.seleccionar()
     for usuario in usuarios:
         log.debug(usuario)
-        
+    
+    
+    #Simular un insert
+    usuario1 = Usuario(nombre="Juan", edad=25, email="juanitoooo@gmail.com")
+    UsuarioDAO.insertar(usuario1)
