@@ -3,3 +3,31 @@
 2025-05-01 11:53:39 - WARNING - This is a warning message
 2025-05-01 11:53:39 - ERROR - This is an error message
 2025-05-01 11:53:39 - CRITICAL - This is a critical message
+2025-05-01 12:28:51 - DEBUG - Usuario [id_usuario=1, nombre=Juan, edad=25, email=juan@gmail.com]
+2025-05-01 12:38:11 - DEBUG - Usuario [id_usuario=Juan, nombre=25, edad=juan@gmail.com, email=None]
+2025-05-01 12:38:54 - DEBUG - Usuario [id_usuario=None, nombre=Juan, edad=25, email=juan@gmail.com]
+2025-05-01 12:38:54 - DEBUG - Usuario [id_usuario=None, nombre=Maria, edad=30, email=mario@gmail.com]
+2025-05-01 12:39:33 - DEBUG - Usuario [id_usuario=None, nombre=Juan, edad=25, email=juan@gmail.com]
+2025-05-01 12:39:33 - DEBUG - Usuario [id_usuario=None, nombre=Maria, edad=30, email=mario@gmail.com]
+2025-05-01 12:39:33 - DEBUG - Usuario [id_usuario=4, nombre=None, edad=None, email=None]
+2025-05-01 12:57:53 - ERROR - Error al conectar a la base de datos: connection to server at "127.0.0.1", port 5432 failed: FATAL:  database "test.db" does not exist
+
+2025-05-01 12:58:40 - DEBUG - Conectado a la base de datos test_db en 127.0.0.1:5432
+2025-05-01 12:58:40 - DEBUG - Conexion: <connection object at 0x0000019F7ED5C370; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+2025-05-01 12:58:40 - DEBUG - Cursor creado: <cursor object at 0x0000019F7ED0DB60; closed: 0>
+2025-05-01 12:58:40 - DEBUG - Cursor: <cursor object at 0x0000019F7ED0DB60; closed: 0>
+2025-05-01 12:59:07 - DEBUG - Conectado a la base de datos test_db en 127.0.0.1:5432
+2025-05-01 12:59:07 - DEBUG - Cursor creado: <cursor object at 0x00000290FAA599A0; closed: 0>
+2025-05-01 13:10:51 - DEBUG - Conectado a la base de datos test_db en 127.0.0.1:5432
+2025-05-01 13:10:51 - DEBUG - Cursor creado: <cursor object at 0x000002134F429E00; closed: 0>
+2025-05-01 13:11:25 - DEBUG - Conectado a la base de datos test_db en 127.0.0.1:5432
+2025-05-01 13:11:25 - DEBUG - Cursor creado: <cursor object at 0x000002A1493D60A0; closed: 0>
+2025-05-01 13:11:25 - DEBUG - Usuario [id_usuario=1, nombre=Tomas, edad=21, email=tprimo@gmail.com]
+2025-05-01 13:11:25 - DEBUG - Usuario [id_usuario=2, nombre=Lucia, edad=18, email=lcarrillo@gmail.com]
+2025-05-01 13:11:25 - DEBUG - Usuario [id_usuario=3, nombre=Patata, edad=30, email=llucas@gmail.com]
+2025-05-01 13:11:25 - DEBUG - Usuario [id_usuario=10, nombre=Mario, edad=20, email=mmario@gmail.com]
+2025-05-01 13:11:25 - DEBUG - Usuario [id_usuario=11, nombre=Juan, edad=25, email=jjuan@gmail.com]
+2025-05-01 13:11:25 - DEBUG - Usuario [id_usuario=12, nombre=Pedro, edad=40, email=ppedro@gmail.com]
+2025-05-01 13:11:25 - DEBUG - Usuario [id_usuario=21, nombre=Mario, edad=20, email=mmario@gmail.com]
+2025-05-01 13:11:25 - DEBUG - Usuario [id_usuario=22, nombre=Juan, edad=25, email=jjuan@gmail.com]
+2025-05-01 13:11:25 - DEBUG - Usuario [id_usuario=23, nombre=Pedro, edad=35, email=ppedro@gmail.com]
